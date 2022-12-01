@@ -1,0 +1,12 @@
+:root {
+  --color-bg-yellow: yellow;
+  --color-bg-blue: blue;
+}
+
+.bg-color-yellow {
+  background-color: var(--color-bg-yellow);
+}
+
+.bg-color-blue {
+  background-color: var(--color-bg-blue);
+}
