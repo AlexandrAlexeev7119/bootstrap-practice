@@ -11,27 +11,63 @@
     />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col-md-8 bg-color-yellow">123123</div>
-        <div class="col-md-4 bg-color-yellow">123123</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-3 bg-color-blue">123</div>
-        <div class="col-sm-6 col-md-3 bg-color-blue">123</div>
-        <div class="col-sm-6 col-md-3 bg-color-blue">123</div>
-        <div class="col-sm-6 col-md-3 bg-color-blue">123</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 col-md-3 col-4 bg-color-blue">123</div>
-        <div class="col-sm-3 col-md-3 col-4 bg-color-blue">123</div>
-        <div class="col-sm-3 col-md-3 col-4 bg-color-blue">123</div>
-        <div class="col-sm-3 col-md-3 col-4 bg-color-blue">123</div>
-        <div class="col-sm-3 col-md-3 col-4 bg-color-blue">123</div>
-        <div class="col-sm-3 col-md-3 col-4 bg-color-blue">123</div>
-        <div class="col-sm-3 col-md-3 col-4 bg-color-blue">123</div>
-        <div class="col-sm-3 col-md-3 col-4 bg-color-blue">123</div>
-      </div>
+    <div class="container">
+      <form action="">
+        <div class="row g-2">
+          <div class="col-md col-sm-12">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floating_person_name"
+                placeholder="Name"
+              />
+              <label for="floating_person_name">Name</label>
+            </div>
+          </div>
+          <div class="col-md col-sm-12">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floating_person_surname"
+                placeholder="Surname"
+                name="floating_person_surname"
+              />
+              <label for="floating_person_surname">Surname</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floating_number_of_order"
+            placeholder="1, 2, etc..."
+          />
+          <label for="floating_number_of_order">Number of order</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floating_email"
+            placeholder="name@example.com"
+          />
+          <label for="floating_email">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea
+            class="form-control"
+            placeholder="Write a message here"
+            id="floating_comment_message"
+            name="floating_comment_message"
+            style="height: 100px"
+          ></textarea>
+          <label for="floating_comment_message">Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
     <script src="js/main.js"></script>
     <script src="./3d-party/bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
